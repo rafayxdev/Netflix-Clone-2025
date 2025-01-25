@@ -1,0 +1,886 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: black;
+}
+/* --------------------------------  Background-Start  ------------------------------- */
+main {
+  position: relative;
+  top: 0;
+  max-height: 689.552px;
+  background-image: url("./Assets/Newbg.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.blur {
+  position: relative;
+  height: 689.552px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 0.7)
+  );
+}
+/* --------------------------------  Background-End  ------------------------------- */
+
+/* --------------------------------  Navbar-Start  ------------------------------- */
+nav {
+  /* background-color: rgb(238, 231, 231); */
+  position: absolute;
+  top: 25px;
+  left: 12vw;
+  width: 74vw;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 144px;
+  cursor: pointer;
+}
+.btn {
+  background-color: #e50914;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: rgb(193, 17, 25);
+  transition: background-color 0.5s cubic-bezier(0.32, 0.94, 0.6, 1); ;
+  
+}
+.btn:active{
+  transition: none;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgb(153, 22, 29);
+  border-color: darkgray;
+}
+.btn-nav {
+  padding: 0 15px;
+  height: 31px;
+}
+/* --------------------------------  Navbar-End  ------------------------------- */
+/* --------------------------------  Main-Start  ------------------------------- */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  min-height: 312px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 183px;
+  /* bottom: auto; */
+  left: 10vw;
+  color: white;
+  text-align: center;
+}
+.main > :nth-child(1) {
+  font-weight: 900;
+  font-size: 56px;
+  padding: 0 18%;
+  margin-bottom: 10px;
+}
+.main > :nth-child(2) {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.main > :nth-child(3) {
+  font-weight: 400;
+  font-size: 16px;
+}
+.input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 15px;
+}
+.input input {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 330px;
+  padding: 0 15px;
+  background-color: rgba(25, 24, 23, 0.7);
+  border-radius: 4px;
+  border: 1px solid grey;
+  color: rgb(184, 184, 184);
+  font-size: 16px;
+}
+.input input::placeholder {
+  color: rgb(184, 184, 184);
+  font-size: 16px;
+  font-weight: 400;
+}
+.btn-main {
+  padding: 13px 25px;
+  font-weight: 600;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.btn-main img {
+  filter: invert(1);
+}
+/* --------------------------------  Main-End  ------------------------------- */
+/* --------------------------------  Trending-Now-Start  ------------------------------- */
+.trending-now {
+  max-width: 74vw;
+  margin: 30px auto;
+}
+
+.text {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+.option {
+  cursor: pointer;
+  margin: 15px 15px 0px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 10px;
+  color: white;
+  background-color: rgb(15, 15, 15);
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+.slider {
+  margin: auto;
+  display: flex;
+  gap: 60px;
+  overflow: hidden;
+  padding: 35px 0px 35px 30px;
+}
+.items {
+  height: 248px;
+  min-width: 177px;
+  border-radius: 0.5rem;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+.item1 {
+  background-image: url(./Assets/Squid\ Game.webp);
+}
+.item2 {
+  background-image: url(./Assets/Venom.webp);
+}
+.item3 {
+  background-image: url(./Assets/Bhool\ Bhulaiya\ 3.webp);
+}
+.item4 {
+  background-image: url(./Assets/BackInAction.webp);
+}
+.item5 {
+  background-image: url(./Assets/life.webp);
+}
+.item6 {
+  background-image: url(./Assets/Money\ Heist.webp);
+}
+.item7 {
+  background-image: url(./Assets/MissionImpossible.webp);
+}
+.item8 {
+  background-image: url(./Assets/LuckyBhaskar.webp);
+}
+.number {
+  cursor: pointer;
+  color: black;
+  font-weight: 900;
+  font-size: 100px;
+  z-index: 1;
+  position: absolute;
+  bottom: 5px;
+  left: -23px;
+  text-shadow: 5px 5px 58px black;
+  -webkit-text-stroke: 2px rgb(221, 221, 221);
+}
+
+.items:hover {
+  transform: scale(106%);
+  transition: transform 0.3s;
+}
+/* --------------------------------  Trending-Now-End  ------------------------------- */
+
+/* --------------------------------  More-Reasons-Start  ------------------------------- */
+.more-reasons {
+  max-width: 74vw;
+
+  margin: 30px auto;
+}
+.reasons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  margin-top: 18px;
+}
+.reason {
+  border-radius: 15px;
+  padding: 1.5rem 1rem 6rem 1rem;
+  background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.reason h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+.reason p {
+  padding-top: 10px;
+  color: rgb(170, 170, 181);
+  font-weight: 600;
+  font-size: 16px;
+}
+.icon-reason {
+  position: absolute;
+  bottom: 9px;
+  right: 12px;
+}
+/* --------------------------------  More-Reasons-End  ------------------------------- */
+/* --------------------------------  FAQ-Start  ------------------------------- */
+
+.FAQ-Section {
+  max-width: 74vw;
+  margin: auto;
+}
+.questions {
+  margin: 20px auto;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 9px;
+}
+.question-item {
+  padding: 1.5rem;
+  background-color: rgb(45, 45, 45);
+  font-weight: 500;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+
+  cursor: pointer;
+}
+.question-item span {
+  align-self: center;
+}
+.question-item img {
+  filter: invert(1);
+}
+.question-item:hover {
+  background-color: rgb(65, 65, 65);
+  transition: background-color 0.2s ease-out;
+}
+/* --------------------------------  FAQ-End  ------------------------------- */
+/* --------------------------------  Copy-Input-Start  ------------------------------- */
+
+.copy-section {
+  max-width: 74vw;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 70px auto;
+}
+.copy-section > :nth-child(1) {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+.copy-section input {
+  width: 500px;
+}
+
+/* --------------------------------  Copy-Input-End  ------------------------------- */
+/* --------------------------------  Footer-Start  ------------------------------- */
+.footer {
+  max-width: 74vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding-bottom: 96px;
+}
+.footer > :nth-child(1) a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  font-size: 16px;
+}
+.footer ul {
+  row-gap: 0.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  font-size: 14px;
+}
+.footer-select img {
+  filter: invert(1);
+  position: absolute;
+  top: 23px;
+  left: 11px;
+}
+.footer-select {
+  position: relative;
+}
+.footer-select select {
+  padding-left: 26px;
+}
+.netflix-pk {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+/* --------------------------------  Footer-End  ------------------------------- */
+
+@media screen and (min-width: 1300px) {
+  /* --------------------------------  Main  ------------------------------- */
+  .more-reasons,
+  .trending-now,
+  .FAQ-Section,
+  .copy-section {
+    max-width: 84vw;
+
+    margin: 50px auto;
+  }
+
+  nav {
+    left: 8vw;
+    width: 84vw;
+  }
+  /* --------------------------------  Main  ------------------------------- */
+  .option {
+    padding: 9px 17px 8px 10px;
+  }
+  .slider {
+    padding: 22px 0px 35px 20px;
+    gap: 45px;
+  }
+  .number {
+    bottom: -1px;
+    left: -16px;
+  }
+  /* --------------------------------  Main  ------------------------------- */
+  .reason {
+    padding: 1.5rem 1rem 8rem 1rem;
+  }
+  .reason h2 {
+    font-weight: 600;
+  }
+  .reason p {
+    font-weight: 500;
+  }
+  /* --------------------------------  Main  ------------------------------- */
+  .footer {
+    max-width: 84vw;
+
+    margin: 55px auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main {
+    max-height: 800px;
+  }
+  .blur {
+    height: 800px;
+  }
+  .main {
+    top: 225px;
+        left: 13vw;
+  }
+  nav{
+    left: 10vw; width: 80vw;
+  }
+}
+@media screen and (min-width: 1500px) {
+  main {
+    max-height: 750px;
+  }
+  .blur {
+    height: 750px;
+  }
+  .main {
+    top: 260px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .main {
+    top: 310px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  main {
+    max-height: 815px;
+  }
+  .blur {
+    height: 815px;
+  }
+  .main {
+    top: 360px;
+        left: 15vw;
+        width: 71vw;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  main {
+    max-height: 970px;
+  }
+  .blur {
+    height: 970px;
+  }
+  .main {
+    top: 409px;
+        width: 68vw;
+        left: 16vw;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .more-reasons,
+  .trending-now,
+  .FAQ-Section,
+  .copy-section,
+  .footer {
+    max-width: 1213px;
+
+    margin: 70px auto;
+  }
+  .left-line {
+    position: absolute;
+    max-height: 900px;
+    background: linear-gradient(
+      0deg,
+      transparent 0%,
+      #6f181d 50%,
+      transparent 100%
+    );
+    width: 6px;
+    margin-left: -6px;
+    height: 0;
+    padding-top: 46.666666666666664%;
+    box-sizing: border-box;
+  }
+  .right-line {
+    position: absolute;
+    max-height: 900px;
+    background: linear-gradient(
+      0deg,
+      transparent 0%,
+      #6f181d 50%,
+      transparent 100%
+      );
+      width: 6px;
+    right: -6px;
+    height: 0;
+    padding-top: 46.666666666666664%;
+    box-sizing: border-box;
+  }
+  main {
+    max-height: 900px;
+    width: 1920px;
+    margin: auto;
+  }
+  .blur {
+    height: 900px;
+  }
+  nav {
+    left: 350px;
+        width: 1220px;
+  }
+
+  .main {
+    top: 440px;
+    width: 1068px;
+    left: 428px;
+  }
+  .main > :nth-child(1) {
+    font-weight: 900;
+    font-size: 64px;
+  }
+  .main > :nth-child(2) {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .input input {
+    width: 450px;
+  }
+  .text {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  
+  .items {
+    height: 302px;
+    min-width: 216px;
+  }
+  .number {
+    bottom: -1px;
+    left: -15px;
+    font-size: 120px;
+  }
+  
+  .reason {
+    padding: 2rem 1.7rem 8rem 1.5rem;
+  }
+  .reason h2 {
+    padding-right: 10px;
+  }
+  .reason p {
+    padding-top: 21px;
+  }
+
+  .footer-select select {
+    padding: 3px 20px 5px 27px;
+  }
+}
+
+
+
+@media screen and (max-width: 1180px) {
+  /* --------------------------------  Main  ------------------------------- */
+  .more-reasons,
+  .trending-now,
+  .FAQ-Section,
+  .copy-section,
+  .footer {
+    max-width: 86vw;
+
+    margin: 70px auto;
+  }
+
+  .main > :nth-child(1) {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .main > :nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .main > :nth-child(3) {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  nav {
+    left: 8vw;
+    width: 84vw;
+  }
+  .input input {
+    width: 385px;
+  }
+  .btn-main {
+    padding: 13px 16px;
+  }
+  .main {
+    top: 200px;
+    width: 70vw;
+    left: 15vw;
+  }
+  /* --------------------------------  Trending-now  ------------------------------- */
+  .trending-now {
+    margin: 30px auto;
+  }
+  .items {
+    height: 206px;
+    min-width: 147px;
+  }
+  .number {
+    font-size: 83px;
+    bottom: 1px;
+    left: -18px;
+  }
+  /* --------------------------------  More-Reasons  ------------------------------- */
+  .more-reasons {
+    margin: 0px auto 30px auto;
+  }
+  .reasons {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* --------------------------------  FAQ  ------------------------------- */
+  .question-item {
+    font-size: 18px;
+  }
+  .question-item img {
+    width: 24px;
+  }
+
+  /* --------------------------------  Footer  ------------------------------- */
+  .footer ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 960px) {
+  /* --------------------------------  Main  ------------------------------- */
+  .more-reasons,
+  .trending-now,
+  .FAQ-Section,
+  .copy-section,
+  .footer {
+    max-width: 92vw;
+
+    margin: 70px auto;
+  }
+  main {
+    max-height: 555px;
+  }
+  .blur {
+    height: 555px;
+  }
+  nav {
+    width: 89vw;
+    left: 6vw;
+    top: 28px;
+  }
+
+  .logo {
+    width: 88px;
+  }
+  .main {
+    width: 414px;
+    top: 145px;
+    left: 27vw;
+  }
+  .main > :nth-child(1) {
+    font-weight: 700;
+    font-size: 32px;
+    padding: 0;
+  }
+  .main > :nth-child(2) {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .input input {
+    width: 200px;
+    height: 50px;
+  }
+  .btn-main {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 20px;
+  }
+  /* --------------------------------  Trending-Now  ------------------------------- */
+  .select {
+    display: flex;
+    flex-direction: column;
+  }
+  .text {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .items {
+    height: 167px;
+    min-width: 119px;
+  }
+  .slider {
+    gap: 20px;
+    padding: 20px 0px 0px 14px;
+  }
+  .number {
+    font-size: 64px;
+    bottom: -1px;
+    left: -11px;
+  }
+  /* --------------------------------  More-Reasons  ------------------------------- */
+  .reasons {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* --------------------------------  Copy-Section  ------------------------------- */
+
+  .copy-section input {
+    width: 500px;
+  }
+  /* --------------------------------  Footer  ------------------------------- */
+  .footer ul {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-select {
+    display: block;
+  }
+  .footer-select select {
+    padding: 3px 20px 5px 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main {
+    left: 20vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .more-reasons,
+  .trending-now,
+  .FAQ-Section,
+  .copy-section {
+    max-width: 91vw;
+    margin: 50px auto;
+  }
+  /* --------------------------------  Main  ------------------------------- */
+  main {
+    max-height: 520px;
+  }
+  .blur {
+    height: 520px;
+  }
+  nav {
+    width: 90vw;
+    left: 5vw;
+    top: 28px;
+  }
+  .main {
+    width: 84vw;
+    top: 140px;
+    left: 8vw;
+  }
+  .input {
+    justify-content: center;
+  }
+  .input input {
+    width: 416px;
+    height: 50px;
+  }
+  /* --------------------------------  Trending-Now  ------------------------------- */
+  .slider {
+    gap: 18px;
+  }
+  .option {
+    margin: 15px 0px 0px 0px;
+    padding: 8px 36px 8px 8px;
+  }
+  /* --------------------------------  More-Reasons  ------------------------------- */
+  .reason {
+    padding: 1.5rem 1rem 5rem 1rem;
+  }
+  .reason h2 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .reason p {
+    font-weight: 500;
+  }
+  .icon-reason {
+    bottom: 3px;
+    right: 4px;
+  }
+  .icon-reason svg {
+    height: 63.36px;
+    width: 63.36px;
+  }
+  /* --------------------------------  Copy-Input  ------------------------------- */
+  .copy-section {
+    justify-items: flex-start;
+  }
+  .copy-input {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .copy-input input {
+    width: 100%;
+  }
+  /* --------------------------------  Footer  ------------------------------- */
+  .footer ul {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    max-width: 89vw;
+    margin: 50px auto;
+  }
+  .footer-select select {
+    padding: 3px 20px 5px 30px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .more-reasons,
+  .trending-now,
+  .FAQ-Section,
+  .copy-section,
+  .footer {
+    max-width: 88vw;
+
+    margin: 60px auto;
+  }
+  main {
+    min-width: 100vw;
+  }
+  /* --------------------------------  Nav  ------------------------------- */
+  nav {
+    left: 6vw;
+    width: 88vw;
+  }
+  .logo {
+    width: 85px;
+  }
+  /* --------------------------------  Main  ------------------------------- */
+  .main {
+    width: 84vw;
+    top: 150px;
+    left: 8vw;
+  }
+  .main > :nth-child(1) {
+    margin-bottom: 0px;
+  }
+  .btn-main {
+    padding: 13px 15px;
+  }
+  .input {
+    gap: 15px;
+  }
+  .input input {
+    width: 100%;
+  }
+  /* --------------------------------  Trending-Now  ------------------------------- */
+  .items {
+    height: 160px;
+    min-width: 114px;
+  }
+  .slider {
+    padding: 20px 0px 0px 10px;
+  }
+
+  /* --------------------------------  More-Reasons  ------------------------------- */
+  .reasons {
+    margin-top: 13px;
+    gap: 8px;
+  }
+  /* --------------------------------  FAQ  ------------------------------- */
+  .questions {
+    margin: 15px auto;
+    row-gap: 7px;
+  }
+  /* --------------------------------  Copy-Input  ------------------------------- */
+  .copy-section input {
+    width: 100%;
+  }
+
+  /* --------------------------------  Footer  ------------------------------- */
+  .footer {
+    max-width: 87vw;
+  }
+  .footer-select select {
+    padding: 3px 15px 5px 27px;
+  }
+}
