@@ -371,7 +371,7 @@ nav {
     left: 8vw;
     width: 84vw;
   }
-  /* --------------------------------  Main  ------------------------------- */
+  /* --------------------------------  Trending-Now  ------------------------------- */
   .option {
     padding: 9px 17px 8px 10px;
   }
@@ -383,7 +383,7 @@ nav {
     bottom: -1px;
     left: -16px;
   }
-  /* --------------------------------  Main  ------------------------------- */
+  /* --------------------------------  More-Reasons  ------------------------------- */
   .reason {
     padding: 1.5rem 1rem 8rem 1rem;
   }
@@ -393,7 +393,7 @@ nav {
   .reason p {
     font-weight: 500;
   }
-  /* --------------------------------  Main  ------------------------------- */
+  /* --------------------------------  Footer  ------------------------------- */
   .footer {
     max-width: 84vw;
 
@@ -401,6 +401,7 @@ nav {
   }
 }
 @media screen and (min-width: 1400px) {
+  /* --------------------------------  Main  ------------------------------- */
   main {
     max-height: 800px;
   }
@@ -416,6 +417,7 @@ nav {
   }
 }
 @media screen and (min-width: 1500px) {
+  /* --------------------------------  Main  ------------------------------- */
   main {
     max-height: 750px;
   }
@@ -427,11 +429,13 @@ nav {
   }
 }
 @media screen and (min-width: 1600px) {
+  /* --------------------------------  Main  ------------------------------- */
   .main {
     top: 310px;
   }
 }
 @media screen and (min-width: 1700px) {
+  /* --------------------------------  Main  ------------------------------- */
   main {
     max-height: 815px;
   }
@@ -440,12 +444,13 @@ nav {
   }
   .main {
     top: 360px;
-        left: 15vw;
-        width: 71vw;
+    left: 15vw;
+    width: 71vw;
   }
 }
 
 @media screen and (min-width: 1800px) {
+  /* --------------------------------  Main  ------------------------------- */
   main {
     max-height: 970px;
   }
@@ -459,6 +464,7 @@ nav {
   }
 }
 @media screen and (min-width: 1920px) {
+  /* --------------------------------  Main  ------------------------------- */
   .more-reasons,
   .trending-now,
   .FAQ-Section,
@@ -508,7 +514,7 @@ nav {
   }
   nav {
     left: 350px;
-        width: 1220px;
+    width: 1220px;
   }
 
   .main {
@@ -527,6 +533,7 @@ nav {
   .input input {
     width: 450px;
   }
+  /* --------------------------------  Trending-now  ------------------------------- */
   .text {
     font-weight: 700;
     font-size: 32px;
@@ -542,6 +549,7 @@ nav {
     font-size: 120px;
   }
   
+  /* --------------------------------  More-Reasons  ------------------------------- */
   .reason {
     padding: 2rem 1.7rem 8rem 1.5rem;
   }
@@ -551,7 +559,8 @@ nav {
   .reason p {
     padding-top: 21px;
   }
-
+  
+  /* --------------------------------  Footer  ------------------------------- */
   .footer-select select {
     padding: 3px 20px 5px 27px;
   }
